@@ -1,0 +1,61 @@
+@import '../../../variables.scss';
+
+$color-background: #f2f2f2;
+$color-border: #ccc;
+$color-hover: #34d6ff;
+$color-attack: #f00;
+
+.opponent-card {
+  background-color: $bg;
+  border-radius: 10px;
+  padding: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: .3s linear;
+    border: 3px solid #fff;
+  }
+
+  &:hover {
+    img{
+        width: 350px;
+        height: 350px;
+        border-color: $color-button;
+    }
+  }
+
+  .opponent-info {
+    text-align: center;
+    h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 16px;
+    }
+  }
+
+  &.attack {
+    background-color: $color-attack;
+
+    .opponent-info {
+      h2,
+      p {
+        color: #fff;
+      }
+    }
+  }
+}

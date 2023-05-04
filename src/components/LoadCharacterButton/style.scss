@@ -1,0 +1,25 @@
+@import '../../variables.scss';
+
+.loadCharacterButton {
+    display: inline-block;
+    cursor: pointer;
+    background-color: $color-button;
+    color: $white;
+    border: none;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin: 0 5px;
+  }
+  
+  .loadCharacterButton:hover {
+    background-color: #00d170;
+    color: #fff;
+  }
+  

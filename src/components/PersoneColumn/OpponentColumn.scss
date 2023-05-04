@@ -1,0 +1,29 @@
+@import '../../variables.scss';
+
+.rigthColumn{
+    width: 600px;
+    height: 100vh;
+    color: $white;
+    background: rgba(0, 0, 0, 0.26);
+    backdrop-filter: blur(100px);
+    background-size: cover;
+    padding: 30px;
+    position: relative;
+    transition: .3s linear;
+}
+
+
+
+.opponent-fight{
+    background-color: $color-button;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: $white;
+    cursor: pointer;
+    transition: .3s linear;
+
+    &:hover{
+        background-color:red;
+    }
+}
